@@ -2,7 +2,6 @@
 
 Ten thousand glowing swords controlled by the movement of your hand, right in the browser. Hand tracking uses your webcam, with no install and no server needed.
 
-Inspired by a demo video of flying swords controlled with bare hands.
 
 ## Features
 
