@@ -2,6 +2,8 @@
 
 Ten thousand glowing swords controlled by the movement of your hand, right in the browser. Hand tracking uses your webcam, with no install and no server needed.
 
+**[Live demo](https://ewen177.github.io/flying-swords/flying-swords.html)**
+
 
 ## Features
 
@@ -36,7 +38,7 @@ An internet connection is required: Three.js and MediaPipe are loaded from CDNs.
 
 ### Deploy with GitHub Pages
 
-Enable GitHub Pages in the repository settings (deploy from the `main` branch). The site is served over `https`, so the webcam works out of the box, and the page is available at `https://ewen177.github.io/flying-swords/flying-swords.html`. To get the shorter `https://ewen177.github.io/flying-swords/` address, rename the file to `index.html`.
+Enable GitHub Pages in the repository settings (deploy from the `main` branch). The site is served over `https`, so the webcam works out of the box, and the page is available at the [live demo](https://ewen177.github.io/flying-swords/flying-swords.html) address. To get the shorter `https://ewen177.github.io/flying-swords/` address, rename the file to `index.html`.
 
 ## Settings
 
