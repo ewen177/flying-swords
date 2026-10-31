@@ -221,7 +221,7 @@ function frame() {
     const i3 = i * 3, ux = U[i3], uy = U[i3+1], uz = U[i3+2];
     let tx3, ty3, tz3;
 
-    if (g === 'point') {
+    if (g === 'point' && (i % 10) < 3) {      // 30% of the swords form the stream
       const s = (S2[i] + t * (0.3 + 0.5 * S1[i])) % 1;       // progress along the beam
       const along = s * 13, lat = 0.25 + s * 2.4;             // the stream widens as it leaves the finger
       const a = S1[i] * 6.2832 + s * 5 + t * 2.5;             // helical flow around the pointing axis
@@ -230,8 +230,8 @@ function frame() {
       ty3 = c.y + pdy * along + pdx * o1;
       tz3 = o2 * 0.5;
     } else {
-      const R = (g === 'fist' ? 1.3 : g === 'idle' ? 5.5 : c.size) * (0.85 + 0.3 * S1[i]);
-      const spin = (g === 'fist' ? 2.2 : g === 'idle' ? 0.25 : 0.9) * (0.6 + 0.8 * S2[i]);
+      const R = (g === 'fist' ? 1.3 : g === 'point' ? 1.6 : g === 'idle' ? 5.5 : c.size) * (0.85 + 0.3 * S1[i]);
+      const spin = (g === 'fist' ? 2.2 : g === 'point' ? 1.8 : g === 'idle' ? 0.25 : 0.9) * (0.6 + 0.8 * S2[i]);
       const a = t * spin, ca = Math.cos(a), sa = Math.sin(a);
       const rx = ux * ca + uz * sa, rz = -ux * sa + uz * ca;   // rotation around Y
       const ry = uy * cosT - rz * sinT, rz2 = uy * sinT + rz * cosT; // tilt
